@@ -3,6 +3,13 @@ spring:
     name: service-product
   profiles:
     active: dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:9020
+        instance:
+          service-base-url: http://localhost:9050
+          name: Product API Service
 server:
   servlet:
     context-path: /store/api/v1
@@ -11,3 +18,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:9010/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always

@@ -3,6 +3,13 @@ spring:
     name: shopping-service
   profiles:
     active: dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:9020
+        instance:
+          service-base-url: http://localhost:9070
+          name: Shopping API Service
 server:
   servlet:
     context-path: /store/api/v1
@@ -14,3 +21,11 @@ eureka:
 feign:
   circuitbreaker:
     enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
