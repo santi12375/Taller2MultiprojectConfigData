@@ -1,6 +1,6 @@
 spring:
   application:
-    name: movie-service
+    name: showtime-service
   profiles:
     active: dev
   boot:
@@ -10,15 +10,15 @@ spring:
         username: admin
         password: admin
         instance:
-          service-base-url: http://localhost:9050
-          name: Movie API Service
+          service-base-url: http://localhost:9060
+          name: Showtime API Service
           metadata:
             user.name: admin
             user.password: admin
 server:
   servlet:
     context-path: /store/api/v1
-  port: 9050
+  port: 9060
 eureka:
   client:
     service-url:

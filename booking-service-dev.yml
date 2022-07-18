@@ -3,7 +3,7 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password: sa
-    url: "jdbc:h2:mem:shopping;"
+    url: "jdbc:h2:mem:booking;"
   h2:
     console:
       enabled: true
