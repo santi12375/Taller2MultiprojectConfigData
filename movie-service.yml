@@ -17,7 +17,7 @@ spring:
             user.password: admin
 server:
   servlet:
-    context-path: /store/api/v1
+    context-path: /taller2/api/v1
   port: 9050
 eureka:
   client:

@@ -14,17 +14,17 @@ spring:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/store/api/v1/users/**
+            - Path=/taller2/api/v1/users/**
         - id: booking-service
           uri: lb://booking-service
           predicates:
-            - Path=/store/api/v1/bookings/**
+            - Path=/taller2/api/v1/bookings/**
         - id: movie-service
           uri: lb://movie-service
           predicates:
-            - Path=/store/api/v1/movies/**
+            - Path=/taller2/api/v1/movies/**
         - id: showtime-service
           uri: lb://showtime-service
           predicates:
-            - Path=/store/api/v1/showtimes/**
+            - Path=/taller2/api/v1/showtimes/**
 
