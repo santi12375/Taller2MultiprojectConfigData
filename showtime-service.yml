@@ -18,7 +18,7 @@ spring:
 server:
   servlet:
     context-path: /taller2/api/v1
-  port: 9060
+  port: 9080
 eureka:
   client:
     service-url:
